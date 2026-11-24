@@ -1,10 +1,10 @@
 {
-  "name": "flow-video-prompt-dr",
+  "name": "flow-prompt-doctor",
   "version": "1.0.0",
-  "description": "Scored critique of a Flow (Veo) prompt and start frame against our playbook.",
+  "description": "Pre-flight checkup for AI video generation prompts: scores a Google Flow prompt and its start frame against a production playbook.",
   "type": "module",
   "bin": {
-    "flow-video-prompt-dr": "bin/flow-video-prompt-dr.js"
+    "flow-prompt-doctor": "bin/flow-prompt-doctor.js"
   },
   "scripts": {
     "test": "node test/rules.test.js",

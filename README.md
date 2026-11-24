@@ -1,7 +1,8 @@
-# Flow Video Prompt Dr
+# Flow Prompt Doctor
 
-A scored critique of a Google Flow (Veo) prompt and its start frame, against
-the Flow craft playbook and our twelve recorded failure modes.
+A pre-flight checkup for AI video generation prompts. It scores a Google
+Flow prompt and its start frame against the Flow craft playbook and our
+twelve recorded failure modes.
 
 - `src/rules.js` is the whole engine: pure functions, no I/O. The CLI and
   the page both import `diagnose()`.
@@ -14,9 +15,9 @@ the Flow craft playbook and our twelve recorded failure modes.
 
 ## Use
 
-    node bin/flow-video-prompt-dr.js --prompt "Slow push-in. ..." --still "Wide shot from behind, ..."
-    node bin/flow-video-prompt-dr.js --prompt-file shot.txt --still-file still.txt --end "..." --mode frames --seconds 8
-    node bin/flow-video-prompt-dr.js ... --json      # machine-readable; exit 1 when anything blocks
+    node bin/flow-prompt-doctor.js --prompt "Slow push-in. ..." --still "Wide shot from behind, ..."
+    node bin/flow-prompt-doctor.js --prompt-file shot.txt --still-file still.txt --end "..." --mode frames --seconds 8
+    node bin/flow-prompt-doctor.js ... --json      # machine-readable; exit 1 when anything blocks
 
 Page: `npm run build` (copies the engine into `public/`), then serve
 `public/` with any static server. `#ex=good` and `#ex=bad` load examples.
