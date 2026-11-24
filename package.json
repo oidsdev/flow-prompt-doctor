@@ -10,6 +10,6 @@
     "test": "node test/rules.test.js",
     "build": "cp src/rules.js public/rules.js"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": true
 }
