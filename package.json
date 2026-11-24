@@ -1,0 +1,15 @@
+{
+  "name": "prompt-doctor",
+  "version": "1.0.0",
+  "description": "Scored critique of a Flow (Veo) prompt and start frame against our playbook.",
+  "type": "module",
+  "bin": {
+    "prompt-doctor": "bin/prompt-doctor.js"
+  },
+  "scripts": {
+    "test": "node test/rules.test.js",
+    "build": "cp src/rules.js public/rules.js"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
