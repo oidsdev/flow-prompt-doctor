@@ -1,10 +1,10 @@
 {
-  "name": "flow-prompt-dr",
+  "name": "flow-video-prompt-dr",
   "version": "1.0.0",
   "description": "Scored critique of a Flow (Veo) prompt and start frame against our playbook.",
   "type": "module",
   "bin": {
-    "flow-prompt-dr": "bin/flow-prompt-dr.js"
+    "flow-video-prompt-dr": "bin/flow-video-prompt-dr.js"
   },
   "scripts": {
     "test": "node test/rules.test.js",

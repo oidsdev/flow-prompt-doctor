@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-// flow-prompt-dr: score a Flow prompt and its start frame against the playbook.
+// flow-video-prompt-dr: score a Flow prompt and its start frame against the playbook.
 //
-//   flow-prompt-dr --prompt "Slow push-in. ..." --still "Wide shot, riders from behind ..."
-//   flow-prompt-dr --prompt-file shot.txt --still-file still.txt [--end "..."] [--mode frames|ingredients|text] [--seconds 8] [--json]
-//   echo "prompt text" | flow-prompt-dr --still "..."
+//   flow-video-prompt-dr --prompt "Slow push-in. ..." --still "Wide shot, riders from behind ..."
+//   flow-video-prompt-dr --prompt-file shot.txt --still-file still.txt [--end "..."] [--mode frames|ingredients|text] [--seconds 8] [--json]
+//   echo "prompt text" | flow-video-prompt-dr --still "..."
 import { readFileSync } from "node:fs";
 import { diagnose, FAILURE_MODES } from "../src/rules.js";
 
@@ -36,7 +36,7 @@ if (opt.json) {
 const tty = process.stdout.isTTY;
 const c = (code, s) => (tty ? `\x1b[${code}m${s}\x1b[0m` : s);
 const sev = { error: c("31;1", "BLOCK"), warn: c("33;1", "WARN "), tip: c("36", "TIP  ") };
-console.log(`\n${c("1", "Flow Prompt Dr")}  ${r.mode} mode, ${r.wordCount} words, ${r.seconds} s`);
+console.log(`\n${c("1", "Flow Video Prompt Dr")}  ${r.mode} mode, ${r.wordCount} words, ${r.seconds} s`);
 console.log(`${c("1", `Score ${r.score}/100  grade ${r.grade}`)}  ${r.verdict}\n`);
 for (const f of r.findings) {
   console.log(`${sev[f.severity]} ${c("2", f.rule + ":")} ${f.title}`);
