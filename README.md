@@ -1,4 +1,4 @@
-# Prompt Doctor
+# Flow Prompt Dr
 
 A scored critique of a Google Flow (Veo) prompt and its start frame, against
 the Flow craft playbook and our twelve recorded failure modes.
@@ -14,9 +14,9 @@ the Flow craft playbook and our twelve recorded failure modes.
 
 ## Use
 
-    node bin/prompt-doctor.js --prompt "Slow push-in. ..." --still "Wide shot from behind, ..."
-    node bin/prompt-doctor.js --prompt-file shot.txt --still-file still.txt --end "..." --mode frames --seconds 8
-    node bin/prompt-doctor.js ... --json      # machine-readable; exit 1 when anything blocks
+    node bin/flow-prompt-dr.js --prompt "Slow push-in. ..." --still "Wide shot from behind, ..."
+    node bin/flow-prompt-dr.js --prompt-file shot.txt --still-file still.txt --end "..." --mode frames --seconds 8
+    node bin/flow-prompt-dr.js ... --json      # machine-readable; exit 1 when anything blocks
 
 Page: `npm run build` (copies the engine into `public/`), then serve
 `public/` with any static server. `#ex=good` and `#ex=bad` load examples.

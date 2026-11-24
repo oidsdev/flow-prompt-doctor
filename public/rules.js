@@ -1,4 +1,4 @@
-// Prompt Doctor rules: a scored critique of a Flow (Veo) prompt and its start frame.
+// Flow Prompt Dr rules: a scored critique of a Flow (Veo) prompt and its start frame.
 //
 // Sources, all in research/: MUSE-LEG.md (sections 1 to 4, the START-FRAME
 // CHECKLIST and PROMPT TEMPLATE), GEMINI-LEG.md (failure matrix, prop
